@@ -167,8 +167,25 @@ fn run() -> Result<(), Error> {
 }
 
 fn main() {
+//    let args = env::args().collect::<Vec<String>>();
+//    match args.len() - 1 {
+//        1 => {
+//            // TODO parse args
+//        }
+//        _ => {
+//            eprintln!("Usage: {} <directory>", &args[0]);
+//            process::exit(1);
+//        }
+//    }
+//    if args.len() != 3 {
+//        eprintln!("Usage: {} <directory>", &args[0]);
+//    }
+//
+//    let device = args[1].clone();
+//    let location = args[2].clone();
+//    println!("device: {} location: {}", &device, &location);
     match run() {
-        Ok(r) => r,
+        Ok(_) => println!("Closed gracefully"),
         Err(e) => eprintln!("Error! {}", e)
     }
 }
