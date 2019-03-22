@@ -1,0 +1,17 @@
+[package]
+name = "gst-videotest-rs"
+version = "0.1.0"
+authors = ["Tim Flichy <timflichy@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "test_lib"
+
+[dependencies]
+failure = "0.1.5"
+failure_derive = "0.1.5"
+glib = "0.7.1"
+gstreamer = "0.13.0"
+gstreamer-base = "0.13.0"
+gstreamer-app = "0.13.0"
+gstreamer-video = "0.13.0"
